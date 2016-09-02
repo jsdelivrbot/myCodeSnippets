@@ -6,9 +6,11 @@ Command Line | Description | Link
 ls -force | Allows to see hidden files | https://www.learnhowtoprogram.com/intro-to-programming/git-html-and-css/practice-git-project-setup
 
 ## Git
+Git | Description | Link
 :---:|---|---
 .pairs | Allows for pair programming (requires pivotal_git_scripts)| https://www.learnhowtoprogram.com/intro-to-programming/git-html-and-css/practice-git-project-setup
 git about | Verify current pair assignment | https://www.learnhowtoprogram.com/intro-to-programming/git-html-and-css/practice-git-project-setup
+Do this for gitIgnoreGlobal | https://www.learnhowtoprogram.com/intro-to-programming/getting-started-with-intro-to-programming/git-configurations
 
 ## JavaScript
 JavaScript | Description | Link
