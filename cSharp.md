@@ -1,4 +1,10 @@
 ##Creating a C# project witn Nancy
+You may need to check for the last version 
+```console
+$ dnvm install latest
+$ dnvm upgrade
+```
+
 Nancy Documentataion: https://github.com/NancyFx/Nancy/wiki/Documentation
 
 To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file is **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces.   
