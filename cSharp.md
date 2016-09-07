@@ -8,9 +8,9 @@ Small points to remember
 ```html
 @Model. 
 ```
-
-Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
-Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
+#### Documentation
+- Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
+- Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
 To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file is **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces.   
 ```json
 {
