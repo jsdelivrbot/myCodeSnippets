@@ -4,6 +4,10 @@ You may need to check for the last version
 $ dnvm install latest
 $ dnvm upgrade
 ```
+Small points to remember
+```html
+@Model. 
+```
 
 Nancy Documentataion: https://github.com/NancyFx/Nancy/wiki/Documentation
 
