@@ -83,4 +83,23 @@ namespace ProjectCore
 }
 
 ```
-From here it is common to create an objects folder
+From here it is common to create an objects folder with a cs folder of objects
+```csharp
+namespace ProjectCore.Objects
+{
+  public class ProjectCore
+  {
+    private string _name;
+
+    public string GetName()
+    {
+      return _name;
+    }
+
+    public void SetName(string newName)
+    {
+      _name = newName;
+    }
+  }
+}
+```
