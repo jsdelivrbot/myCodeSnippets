@@ -1,6 +1,7 @@
 ##Creating a C# project witn Nancy
+Nancy Documentataion: https://github.com/NancyFx/Nancy/wiki/Documentation
 
-To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces.   
+To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file is **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces.   
 ```json
 {
   "dependencies": {
@@ -31,7 +32,7 @@ using Nancy.ViewEngines.Razor;
 In the file **Startup.cs** and inside the "primary" project namespace, you will need to add Startup class  Do not forget to put this inside a namespace!
 
 ```cs
-namespace Core
+namespace ProjectCore
 {
   public class Startup
   {
@@ -51,13 +52,15 @@ namespace Core
   {
     public IEnumerable<string> GetAssemblyNames()
     {
-       return null;
+      return null;
     }
-      public IEnumerable<string> GetDefaultNamespaces()
+
+    public IEnumerable<string> GetDefaultNamespaces()
     {
       return null;
     }
-      public bool AutoIncludeModelNamespace
+
+    public bool AutoIncludeModelNamespace
     {
       get { return false; }
     }
@@ -65,18 +68,19 @@ namespace Core
 }
 ```
 
-Additionally, the first module with Nancy should have the code.  The beauty of Nancy is the ease of loading "views", as seen here:
+Additionally, the first module with Nancy should have the code.  The beauty of Nancy is the ease of loading a "View", as seen below. Please note that a index.cshtml file is needed.  
 ```csharp
 using Nancy;
-namespace Core
+namespace ProjectCore
 {
   public class HomeModule : NancyModule
   {
     public HomeModule()
     {
-      Get["/"] = _ =>
-      {return View["index.html"];};
+      Get["/"] = _ => {return View["index.cshtml"];};
     }
   }
 }
+
 ```
+From here it is common to create an objects folder
