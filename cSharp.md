@@ -9,6 +9,7 @@ Small points to remember
 @Model. 
 ```
 ### Documentation
+- C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
 - Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
 - Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
 
