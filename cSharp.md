@@ -5,9 +5,10 @@ $ dnvm install latest
 $ dnvm upgrade
 ```
 Small reminders
-```html
+```cs
 @Model.
 using System.Collections.Generic;
+Task newTask = new Task(Request.Form["new-task"]);
 ```
 ### Documentation
 - C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
