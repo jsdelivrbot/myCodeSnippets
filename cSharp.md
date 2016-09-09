@@ -9,6 +9,10 @@ Small reminders
 @Model.
 using System.Collections.Generic;
 Request.Form[""];
+public static List<Contact> DisplayAll()  //Remember that the object is List<Contact>
+
+//Remember that creating a method that is the same as the class is called a constructor and it's a key activity. 
+
 ```
 ### Documentation
 - C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
