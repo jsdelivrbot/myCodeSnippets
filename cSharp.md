@@ -8,7 +8,7 @@ Small reminders
 ```cs
 @Model.
 using System.Collections.Generic;
-Task newTask = new Task(Request.Form["new-task"]);
+Request.Form[""];
 ```
 ### Documentation
 - C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
