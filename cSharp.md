@@ -4,9 +4,10 @@ You may need to check for the last version
 $ dnvm install latest
 $ dnvm upgrade
 ```
-Small points to remember
+Small reminders
 ```html
-@Model. 
+@Model.
+using System.Collections.Generic;
 ```
 ### Documentation
 - C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
