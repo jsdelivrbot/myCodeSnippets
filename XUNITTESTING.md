@@ -1,6 +1,6 @@
 ## Using xUnit
 
-Additional Files
+Additional information for project.json file 
 
 ```json
 {
