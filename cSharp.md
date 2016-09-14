@@ -3,6 +3,20 @@
 - Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
 - Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
 
+## Creating a Csharp Program
+Make a file that ends with .cs.  M(ake sure a runtime is loaded on computer, like Mono).  Here is basics needed for each file.
+```csharp
+using System;
+
+class Goodbye
+{
+  static void Main()
+  {
+    //Everything godes here, like:
+    Console.WriteLine("Goodbye World");
+  }
+}
+```
 ## Creating a C# project with Nancy
 You may need to check for the last version 
 ```console
@@ -156,7 +170,12 @@ From Wikipedia
 
 ## Methods to Remember
 
-```cSharp
+```csharp
+
+//char
+char = 
+
+// strings
 string phrase = "Programming is AWESOME";
 phrase.ToUpper();
 phrase.ToLower();
@@ -165,4 +184,19 @@ string phrase3 = phrase.Replace("hello", "goodbye")
 int number = 56;  number.ToString();
 " Hi ".Trim();
 
+//ints
+string num = "32";
+int newNum = int.Parse(num);
+
+//bools
+string phrase = "Gosh";
+bool answer = phrase.StartsWith("g");
+bool answer1 = phrase.EndsWith("o");
+
 ```
+```console
+//For project named Hello.cs
+> mcs Hello.cs //compiles it.  Also creates a Helloo.exe file
+> dnx Hello.exe //
+```
+
