@@ -1,4 +1,9 @@
-##Creating a C# project witn Nancy
+## Documentation
+- C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
+- Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
+- Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
+
+## Creating a C# project with Nancy
 You may need to check for the last version 
 ```console
 $ dnvm install latest
@@ -18,7 +23,6 @@ Objects
 > project.cs
 
 ```
-
 Small reminders
 ```cs
 @Model.
@@ -29,12 +33,9 @@ public static List<Contact> DisplayAll()  //Remember that the object is List<Con
 //Remember that creating a method that is the same as the class is called a constructor and it's a key activity. 
 
 ```
-### Documentation
-- C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
-- Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
-- Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
 
-### Creating a program
+
+### SetUp
 To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file is **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces.   
 ```json
 {
@@ -67,7 +68,6 @@ using Nancy.ViewEngines.Razor;
 ```
 
 In the file **Startup.cs** and inside the "primary" project namespace, you will need to add Startup class  Do not forget to put this inside a namespace!
-
 ```cs
 namespace ProjectCore
 {
@@ -105,7 +105,7 @@ namespace ProjectCore
 }
 ```
 
-Additionally, the first module with Nancy should have the code.  The beauty of Nancy is the ease of loading a "View", as seen below. Please note that a index.cshtml file is needed.  
+Additionally, the HomeModule.cs with Nancy should have the code.  The beauty of Nancy is the ease of loading a "View", as seen below. Please note that a index.cshtml file is needed.  
 ```csharp
 using Nancy;
 namespace ProjectCore
@@ -139,4 +139,30 @@ namespace ProjectCore.Objects
     }
   }
 }
+```
+## Background on cSharp
+
+From Epicodus LEsson cSharp.
+> To have access to C#, we need to install an implementation of the .NET Framework. This will give us and what is called the Common Language Runtime. We recommend using Mono. It's open-source and even better, it's cross-platform.
+
+> C#, pronounced see sharp, began development in the late 90's. Released as a part of the .NET Framework initiative in July 2000, C# is part of a family of computer languages which evolved out of the C/C++ Programming Language, which originated in the late 60's at Bell Labs.
+
+> Today, C# is the object-oriented component of the ASP.NET Framework. Microsoft Chief Architect and C# team leader Anders Hejlsberg described it as an iteration and improvement of the C++ language. Hejlsberg touted C# as "the first component-oriented language in the C/C++ family." As a result, it is " a simple, modern, general-purpose, object-oriented programming language" and to be "economical with regard to memory and processing power requirements".
+
+From Wikipedia
+> The Common Language Runtime (CLR), the virtual machine component of Microsoft's .NET framework, manages the execution of .NET programs. A process known as just-in-time compilation converts compiled code into machine instructions which the computer's CPU then executes.[1] The CLR provides additional services including memory management, type safety, exception handling, garbage collection, security and thread management. All programs written for the .NET framework, regardless of programming language, are executed by the CLR. All versions of the .NET framework include CLR.
+
+> A compiler is a computer program (or a set of programs) that transforms source code written in a programming language (the source language) into another computer language (the target language), with the latter often having a binary form known as object code.
+
+## Methods to Remember
+
+```cSharp
+string phrase = "Programming is AWESOME";
+phrase.ToUpper();
+phrase.ToLower();
+phrase.Contains(phraseTwo);
+string phrase3 = phrase.Replace("hello", "goodbye")
+int number = 56;  number.ToString();
+" Hi ".Trim();
+
 ```
