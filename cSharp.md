@@ -17,12 +17,6 @@ class Goodbye
   }
 }
 ```
-For running the progarm.
-```console
-//For project named Hello.cs
-> mcs Hello.cs //compiles it.  Also creates a Hello.exe file.
-> dnx Hello.exe //
-```
 
 ## Creating a C# project with Nancy
 You may need to check for the last version 
