@@ -4,6 +4,21 @@ You may need to check for the last version
 $ dnvm install latest
 $ dnvm upgrade
 ```
+Common starting folders
+```console
+Modules
+> HomeModule
+Views
+> Index.cshtml
+Content
+Tests
+> Tests.cs
+Objects
+> Startup.cs
+> project.cs
+
+```
+
 Small reminders
 ```cs
 @Model.
