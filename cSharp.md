@@ -7,7 +7,7 @@ $ dnvm upgrade
 Common starting folders
 ```console
 Modules
-> HomeModule
+> HomeModule.cs
 Views
 > Index.cshtml
 Content
