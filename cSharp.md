@@ -194,6 +194,8 @@ string phrase = "Gosh";
 bool answer = phrase.StartsWith("g");
 bool answer1 = phrase.EndsWith("o");
 
+//Dictionary
+Dictionary<string, string> myDictionary = new Dictionary<string, string>() { {"A", "apple"}, {"B", "bear"} };
 ```
 
 
