@@ -33,6 +33,7 @@ Tests
 Objects
 > Startup.cs
 > project.json
+> readme.md
 
 > Modules \ HomeModule.cs
 > Views \ index.cshtml
