@@ -27,16 +27,18 @@ $ dnvm upgrade
 Common starting folders
 ```console
 Modules
-> HomeModule.cs
 Views
-> Index.cshtml
 Content
 Tests
-> Tests.cs
 Objects
 > Startup.cs
 > project.cs
 
+> Modules \ HomeModule.cs
+> Views \ Index.cshtml
+> Tests \ Tests.cs
+> Content \ styles.css
+> Content \ scripts
 ```
 Small reminders
 ```cs
