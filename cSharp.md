@@ -32,7 +32,7 @@ Content
 Tests
 Objects
 > Startup.cs
-> project.cs
+> project.json
 
 > Modules \ HomeModule.cs
 > Views \ Index.cshtml
