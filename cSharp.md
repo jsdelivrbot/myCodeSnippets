@@ -35,7 +35,7 @@ Objects
 > project.json
 
 > Modules \ HomeModule.cs
-> Views \ Index.cshtml
+> Views \ index.cshtml
 > Tests \ Tests.cs
 > Content \ styles.css
 > Content \ scripts
