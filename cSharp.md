@@ -36,10 +36,11 @@ Objects
 > readme.md
 
 > Modules \ HomeModule.cs
+> Objects \ ProjectObjects.cs
 > Views \ index.cshtml
 > Tests \ Tests.cs
 > Content \ styles.css
-> Content \ scripts
+> Content \ scripts.js
 ```
 Small reminders
 ```cs
