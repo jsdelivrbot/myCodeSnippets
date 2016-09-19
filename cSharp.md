@@ -127,6 +127,10 @@ namespace ProjectCore
       get { return false; }
     }
   }
+  public static class DBConfiguration
+  {
+    public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo;Integrated Security=SSPI;";
+  }
 }
 ```
 
@@ -162,10 +166,6 @@ namespace ProjectCore.Objects
     {
       _name = newName;
     }
-  }
-  public static class DBConfiguration
-  {
-    public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo;Integrated Security=SSPI;";
   }
 }
 ```
