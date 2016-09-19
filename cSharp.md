@@ -44,6 +44,8 @@ Objects
 ```
 Small reminders
 ```cs
+using System.Data;
+using System.Data.SqlClient;
 @Model.
 using System.Collections.Generic;
 Request.Form[""];
@@ -71,7 +73,11 @@ To start a c# program using Nancy (as set up by Epicodus), you need to create a 
     "test": "xunit.runner.dnx"
   },
   "frameworks": {
-    "dnx451": {}
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0"
+      }
+    }
   }
 }
 ```
@@ -156,6 +162,10 @@ namespace ProjectCore.Objects
     {
       _name = newName;
     }
+  }
+  public static class DBConfiguration
+  {
+    public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo;Integrated Security=SSPI;";
   }
 }
 ```
