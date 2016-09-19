@@ -169,6 +169,34 @@ namespace ProjectCore.Objects
   }
 }
 ```
+Then ready a tests folder
+```c#
+using System;
+using Xunit;
+using Inventory.Objects;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace Testing
+{
+  public class Testing : IDisposable
+  {
+    [Fact]
+    public void Item_TestingCreatorMethod_true()
+    {
+      Class instance = new Class()
+      Assert.Equal(1, 1);
+    }
+
+    public void Dispose()
+    {
+      //Class.DeleteAll();
+    }
+  }
+}
+```
+
 ## Background on cSharp
 
 From Epicodus LEsson cSharp.
