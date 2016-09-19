@@ -179,22 +179,35 @@ using System.Data;
 using System.Data.SqlClient;
 
 namespace Testing
+using System;
+using Xunit;
+using Inventory.Objects;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace Tests
 {
   public class Testing : IDisposable
   {
+    public ToDoTest()
+    {
+      DBConfiguration.ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo_test;Integrated Security=SSPI;";
+    }
     [Fact]
     public void Item_TestingCreatorMethod_true()
     {
-      Class instance = new Class()
-      Assert.Equal(1, 1);
+      Item newItem = new Item("My Computer");
+      Assert.Equal("My Computer", newItem.GetDescription() );
     }
 
     public void Dispose()
     {
-      //Class.DeleteAll();
+      Item.DeleteAll();
     }
   }
 }
+
 ```
 
 ## Background on cSharp
