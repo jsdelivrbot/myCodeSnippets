@@ -38,7 +38,6 @@ Objects
 > project.json
 > readme.md
 > xunit.runner.json
-
 > Modules \ HomeModule.cs
 > Objects \ ProjectObjects.cs
 > Objects \ Database.cs
@@ -46,17 +45,6 @@ Objects
 > Tests \ Tests.cs
 > Content \ styles.css
 > Content \ scripts.js
-```
-Small reminders
-```cs
-using System.Data;
-using System.Data.SqlClient;
-@Model.
-using System.Collections.Generic;
-Request.Form[""];
-public static List<Contact> DisplayAll()  //Remember that the object is List<Contact>
-
-//Remember that creating a method that is the same as the class is called a constructor and it's a key activity.
 ```
 
 ###### Common namespaces
@@ -75,7 +63,7 @@ using Nancy.ViewEngines.Razor; //The Razor engine in Nancy is a custom implement
 ```
 
 
-### SetUp
+## SetUp a new project
 To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file is **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces. File **xunit.runner.json** sets Xunit testing dependencies (needed if you want each test one at a time--like when running tests in databases)
 
 ###### project.json
@@ -121,8 +109,14 @@ using Nancy.Owin;
 using Nancy.ViewEngines.Razor;
 ```
 
-In the file **Startup.cs** and inside the "primary" project namespace, you will need to add Startup class to set up Nancy working correctly.  If you will be connecting to databases, include another class (conventionally named *DBConfiguration*).  
+In the file **Startup.cs** and inside the "primary" project namespace, you will need to add Startup class to set up Nancy working correctly.  If you will be connecting to databases, include another class (conventionally named *DBConfiguration*).
+
+###### Startup.cs  
 ```cs
+//Remember to:
+// - Update ProjectCore namespace.
+// - Update database connection information.
+
 namespace ProjectCore
 {
   public class Startup
@@ -158,10 +152,10 @@ namespace ProjectCore
   }
   public static class DBConfiguration
   {
-//     Epicodus DataBase Information (Microsoft sequl server)
-// Server type: Database Engine
-// Server name: (localdb)\MSSQLLocalDB
-// Authentication: Windows Authentication
+    // Epicodus DataBase Information (Microsoft sequl server)
+    // Server type: Database Engine
+    // Server name: (localdb)\MSSQLLocalDB
+    // Authentication: Windows Authentication
 
     public static string dataSource = "Data Source=(localdb)\\mssqllocaldb"; // Data Source identifies the server.
     public static string databaseName = "database"; // Initial Catalog is the database name
@@ -172,25 +166,34 @@ namespace ProjectCore
 ```
 
 Additionally, the HomeModule.cs with Nancy should have the code.  The beauty of Nancy is the ease of loading a "View", as seen below. Please note that a index.cshtml file is needed.  
+
+###### HomeModule.cs
 ```csharp
 using Nancy;
-
+// Remember to:
+// - Update ProjectCore namespace
 namespace ProjectCore
 {
   public class HomeModule : NancyModule
   {
     public HomeModule()
     {
-      Get["/"] = _ => {return View["index.cshtml"];};
+      Get["/"] = _ => {
+        return View["index.cshtml"];
+      };
     }
   }
 }
 
 ```
 From here it is common to put in the database connection information into the objects folder in a file called *Database.cs*. The line *ProjectCore* connects back to the class that we set up in *Startup.cs*.  
+
+###### Database.cs
 ```csharp
 using System.Data;
 using System.Data.SqlClient;
+// Remember to:
+// - Update ProjectCore namespace
 
 namespace ProjectCore
 {  
@@ -206,12 +209,14 @@ namespace ProjectCore
 
 
 
-with a cs folder of objects
+###### __.Objects.cs
 ```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+// Remember to:
+// - Update ProjectCore namespace
 
 namespace ProjectCore.Objects
 {
@@ -238,7 +243,9 @@ namespace ProjectCore.Objects
   }
 }
 ```
-Then ready a tests folder
+Update Tests.cs file.
+
+###### Tests.cs
 ```c#
 using System;
 using Xunit;
