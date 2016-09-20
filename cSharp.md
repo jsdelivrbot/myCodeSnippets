@@ -37,9 +37,11 @@ Objects
 > Startup.cs
 > project.json
 > readme.md
+> xunit.runner.json
 
 > Modules \ HomeModule.cs
 > Objects \ ProjectObjects.cs
+> Objects \ Database.cs
 > Views \ index.cshtml
 > Tests \ Tests.cs
 > Content \ styles.css
@@ -82,6 +84,13 @@ To start a c# program using Nancy (as set up by Epicodus), you need to create a 
       }
     }
   }
+}
+```
+For xunit.runner.json
+```json
+{
+  "parallelizeAssembly" : false,
+  "parallelizeTestCollections" : false
 }
 ```
 
