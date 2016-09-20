@@ -1,10 +1,13 @@
+# cSharp
 ## Documentation
 - C# Styling *https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md*
 - Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
 - Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
+- ADO.NET Explanation: https://en.wikipedia.org/wiki/ADO.NET
+- ADO.NET Documentation :https://msdn.microsoft.com/en-us/library/e80y5yhx(v=vs.110).aspx
 
 ## Creating a Csharp Program
-Make a file that ends with .cs.  M(ake sure a runtime is loaded on computer, like Mono).  Here is basics needed for each file.
+Make a file that ends with .cs.  Make sure a runtime is loaded on computer, like Mono).  Here is basics needed for each file.
 ```csharp
 using System;
 
@@ -19,7 +22,7 @@ class Goodbye
 ```
 
 ## Creating a C# project with Nancy
-You may need to check for the last version 
+You may need to check for the last version
 ```console
 $ dnvm install latest
 $ dnvm upgrade
@@ -51,7 +54,7 @@ using System.Collections.Generic;
 Request.Form[""];
 public static List<Contact> DisplayAll()  //Remember that the object is List<Contact>
 
-//Remember that creating a method that is the same as the class is called a constructor and it's a key activity. 
+//Remember that creating a method that is the same as the class is called a constructor and it's a key activity.
 
 ```
 
@@ -92,7 +95,7 @@ using Nancy.Owin;
 using Nancy.ViewEngines.Razor;
 ```
 
-In the file **Startup.cs** and inside the "primary" project namespace, you will need to add Startup class  Do not forget to put this inside a namespace!
+In the file **Startup.cs** and inside the "primary" project namespace, you will need to add Startup class to set up Nancy working correctly.  If you will be connecting to databases, include another class (conventionally named *DBConfiguration*).  
 ```cs
 namespace ProjectCore
 {
@@ -129,7 +132,15 @@ namespace ProjectCore
   }
   public static class DBConfiguration
   {
-    public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo;Integrated Security=SSPI;";
+//     Epicodus DataBase Information (Microsoft sequl server)
+// Server type: Database Engine
+// Server name: (localdb)\MSSQLLocalDB
+// Authentication: Windows Authentication
+
+    string dataSource = "Data Source=(localdb)\\mssqllocaldb"; // Data Source identifies the server.
+    string databaseName = "database"; // Initial Catalog is the database name
+    //Integrated Security sets the security of the database access to the Windows user that is currently logged in.
+    public static string ConnectionString = ""+dataSource+";Initial Catalog="+databaseName+";Integrated Security=SSPI;";
   }
 }
 ```
@@ -149,22 +160,48 @@ namespace ProjectCore
 }
 
 ```
-From here it is common to create an objects folder with a cs folder of objects
+From here it is common to put in the database connection information into the objects folder in a file called *Database.cs*. The line *ProjectCore* connects back to the class that we set up in *Startup.cs*.  
+```csharp
+using System.Data;
+using System.Data.SqlClient;
+
+namespace ProjectCore
+{  
+  public class DB
+  {
+    public static SqlConnection Connection()
+    {
+      SqlConnection conn = new SqlConnection(DBConfiguration.ConnectionString);
+      return conn;
+    }
+  }
+```
+
+
+
+with a cs folder of objects
 ```csharp
 namespace ProjectCore.Objects
 {
   public class ProjectCore
   {
-    private string _name;
-
-    public string GetName()
+    //Overrides are for typcasting
+      public override bool Equals(System.Object otherKitten)
     {
-      return _name;
+      if (!(otherKitten is Kitten))
+      {
+        return false;
+      }
+      else
+      {
+        Kitten newKitten = (Kitten) otherKitten;
+        return this.GetName().Equals(newKitten.GetName());
+      }
     }
 
-    public void SetName(string newName)
+    public override int GetHashCode()
     {
-      _name = newName;
+         return this.GetName().GetHashCode();
     }
   }
 }
@@ -185,14 +222,12 @@ namespace Tests
   {
     public ToDoTest()
     {
-      DBConfiguration.ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo_test;Integrated Security=SSPI;";
+      string dataSource = "Data Source=(localdb)\\mssqllocaldb"; // Data Source identifies the server.
+      string databaseName = "database"; // Initial Catalog is the database name
+      //Integrated Security sets the security of the database access to the Windows user that is currently logged in.
+      public static string ConnectionString = ""+dataSource+";Initial Catalog="+databaseName+";Integrated Security=SSPI;";
     }
-    [Fact]
-    public void Item_TestingCreatorMethod_true()
-    {
-      Item newItem = new Item("My Computer");
-      Assert.Equal("My Computer", newItem.GetDescription() );
-    }
+
 
     public void Dispose()
     {
@@ -200,6 +235,37 @@ namespace Tests
     }
   }
 }
+
+```
+
+To Memorize:
+```cSharp
+  List<Task> allTasks = new List<Task>{};
+
+  SqlConnection conn = DB.Connection();
+  conn.Open();
+
+  SqlCommand cmd = new SqlCommand("SELECT * FROM tasks;", conn);
+  SqlDataReader rdr = cmd.ExecuteReader();
+
+  while(rdr.Read())
+  {
+    int taskId = rdr.GetInt32(0);
+    string taskDescription = rdr.GetString(1);
+    Task newTask = new Task(taskDescription, taskId);
+    allTasks.Add(newTask);
+  }
+
+  if (rdr != null)
+  {
+    rdr.Close();
+  }
+  if (conn != null)
+  {
+    conn.Close();        
+  }
+  return allTasks;
+
 
 ```
 
@@ -222,7 +288,7 @@ From Wikipedia
 ```csharp
 
 //char
-char = 
+char =
 
 // strings
 string phrase = "Programming is AWESOME";
@@ -245,5 +311,3 @@ bool answer1 = phrase.EndsWith("o");
 //Dictionary
 Dictionary<string, string> myDictionary = new Dictionary<string, string>() { {"A", "apple"}, {"B", "bear"} };
 ```
-
-
