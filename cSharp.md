@@ -57,12 +57,28 @@ Request.Form[""];
 public static List<Contact> DisplayAll()  //Remember that the object is List<Contact>
 
 //Remember that creating a method that is the same as the class is called a constructor and it's a key activity.
+```
+
+###### Common namespaces
+
+```cs
+using System; //The System namespace contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.
+using System.IO; //The System.IO namespace contains types that allow reading and writing to files and data streams, and types that provide basic file and directory suppor
+using System.Collections.Generic; //The System.Collections.Generic namespace contains interfaces and classes that define generic collections, which allow users to create strongly typed collections that provide better type safety and performance than non-generic strongly typed collections.
+using System.Data; //The System.Data namespace provides access to classes that represent the ADO.NET architecture. ADO.NET lets you build components that efficiently manage data from multiple data sources.
+using System.Data.SqlClient; //The System.Data.SqlClient namespace is the.NET Framework Data Provider for SQL Server.
+using Microsoft.AspNet.Builder; //Identity extensions for IApplicationBuilder. Defines a class that provides the mechanisms to configure an application’s request pipeline.
+using Nancy; // Nancy is a lightweight, low-ceremony, framework for building HTTP based services on .NET and Mono. Read lots more at their documentation.
+using Nancy.Owin; //OWIN defines a standard interface between .NET web servers and web applications. The goal of the OWIN interface is to decouple server and application, encourage the development of simple modules for .NET web development, and, by being an open standard, stimulate the open source ecosystem of .NET web development tools.
+using Nancy.ViewEngines.Razor; //The Razor engine in Nancy is a custom implementation built around the Razor syntax parser. Please note that the implementation may have differences to the implementation used by ASP.NET MVC.
 
 ```
 
 
 ### SetUp
-To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file is **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces.   
+To start a c# program using Nancy (as set up by Epicodus), you need to create a json file that pass a set of dependencies.  The name for this file is **project.json.**  When **> dnu restore** is typed into the command line, it will create a larger json file necessary for the compiler.  This includes telling the program to find the Startup.cs and provides a set of namespaces. File **xunit.runner.json** sets Xunit testing dependencies (needed if you want each test one at a time--like when running tests in databases)
+
+###### project.json
 ```json
 {
   "dependencies": {
@@ -86,7 +102,7 @@ To start a c# program using Nancy (as set up by Epicodus), you need to create a 
   }
 }
 ```
-For xunit.runner.json
+###### xunit.runner.json
 ```json
 {
   "parallelizeAssembly" : false,
@@ -96,8 +112,9 @@ For xunit.runner.json
 
 When making a project with Nancy, Nancy looks for a file called **Startup.cs** .  This file will use these namespaces in Startup.cs.  
 ```cs
-using System.Collections.Generic;
+using System;
 using System.IO;
+using System.Collections.Generic;
 using Microsoft.AspNet.Builder;
 using Nancy;
 using Nancy.Owin;
@@ -146,8 +163,8 @@ namespace ProjectCore
 // Server name: (localdb)\MSSQLLocalDB
 // Authentication: Windows Authentication
 
-    string dataSource = "Data Source=(localdb)\\mssqllocaldb"; // Data Source identifies the server.
-    string databaseName = "database"; // Initial Catalog is the database name
+    public static string dataSource = "Data Source=(localdb)\\mssqllocaldb"; // Data Source identifies the server.
+    public static string databaseName = "database"; // Initial Catalog is the database name
     //Integrated Security sets the security of the database access to the Windows user that is currently logged in.
     public static string ConnectionString = ""+dataSource+";Initial Catalog="+databaseName+";Integrated Security=SSPI;";
   }
@@ -157,6 +174,7 @@ namespace ProjectCore
 Additionally, the HomeModule.cs with Nancy should have the code.  The beauty of Nancy is the ease of loading a "View", as seen below. Please note that a index.cshtml file is needed.  
 ```csharp
 using Nancy;
+
 namespace ProjectCore
 {
   public class HomeModule : NancyModule
@@ -190,37 +208,40 @@ namespace ProjectCore
 
 with a cs folder of objects
 ```csharp
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+
 namespace ProjectCore.Objects
 {
   public class ProjectCore
   {
-    //Overrides are for typcasting
-      public override bool Equals(System.Object otherKitten)
-    {
-      if (!(otherKitten is Kitten))
-      {
-        return false;
-      }
-      else
-      {
-        Kitten newKitten = (Kitten) otherKitten;
-        return this.GetName().Equals(newKitten.GetName());
-      }
-    }
-
-    public override int GetHashCode()
-    {
-         return this.GetName().GetHashCode();
-    }
+    // //Overrides are for typcasting
+    //   public override bool Equals(System.Object otherKitten)
+    // {
+    //   if (!(otherKitten is Kitten))
+    //   {
+    //     return false;
+    //   }
+    //   else
+    //   {
+    //     Kitten newKitten = (Kitten) otherKitten;
+    //     return this.GetName().Equals(newKitten.GetName());
+    //   }
+    // }
+    //
+    // public override int GetHashCode()
+    // {
+    //      return this.GetName().GetHashCode();
+    // }
   }
 }
 ```
 Then ready a tests folder
 ```c#
-namespace Testing
 using System;
 using Xunit;
-using Inventory.Objects;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -234,13 +255,13 @@ namespace Tests
       string dataSource = "Data Source=(localdb)\\mssqllocaldb"; // Data Source identifies the server.
       string databaseName = "database"; // Initial Catalog is the database name
       //Integrated Security sets the security of the database access to the Windows user that is currently logged in.
-      public static string ConnectionString = ""+dataSource+";Initial Catalog="+databaseName+";Integrated Security=SSPI;";
+      DBConfiguration.ConnectionString = ""+dataSource+";Initial Catalog="+databaseName+";Integrated Security=SSPI;";
     }
 
 
     public void Dispose()
     {
-      Item.DeleteAll();
+      // Item.DeleteAll();
     }
   }
 }
