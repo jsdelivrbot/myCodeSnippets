@@ -39,10 +39,10 @@ Objects
 > readme.md
 > xunit.runner.json
 > Modules \ HomeModule.cs
-> Objects \ ProjectObjects.cs
+> Objects \ [aClass].cs
 > Objects \ Database.cs
 > Views \ index.cshtml
-> Tests \ Tests.cs
+> Tests \ [aClass]Tests.cs
 > Content \ styles.css
 > Content \ scripts.js
 ```
@@ -209,7 +209,7 @@ namespace ProjectCore
 
 
 
-###### __.Objects.cs
+###### [AClass].cs
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -220,7 +220,7 @@ using System.Data.SqlClient;
 
 namespace ProjectCore.Objects
 {
-  public class ProjectCore
+  public class AClass
   {
     // //Overrides are for typcasting
     //   public override bool Equals(System.Object otherKitten)
@@ -243,9 +243,9 @@ namespace ProjectCore.Objects
   }
 }
 ```
-Update Tests.cs file.
+Update ClassTests.cs file.
 
-###### Tests.cs
+###### ClassTests.cs
 ```c#
 using System;
 using Xunit;
