@@ -171,13 +171,6 @@ namespace ProjectCore.Objects
 ```
 Then ready a tests folder
 ```c#
-using System;
-using Xunit;
-using Inventory.Objects;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-
 namespace Testing
 using System;
 using Xunit;
