@@ -4,7 +4,8 @@
 - Nancy Documentataion: *https://github.com/NancyFx/Nancy/wiki/Documentation*
 - Razor Documentation: *http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/*
 - ADO.NET Explanation: https://en.wikipedia.org/wiki/ADO.NET
-- ADO.NET Documentation :https://msdn.microsoft.com/en-us/library/e80y5yhx(v=vs.110).aspx
+- ADO.NET Documentation: https://msdn.microsoft.com/en-us/library/e80y5yhx(v=vs.110).aspx
+- MSDN Documentation on testing: https://msdn.microsoft.com/en-us/library/hh694602.aspx
 
 ## Creating a Csharp Program
 Make a file that ends with .cs.  Make sure a runtime is loaded on computer, like Mono).  Here is basics needed for each file.
