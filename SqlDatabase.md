@@ -1,10 +1,19 @@
 # SQL DataBase
 
-## Resources
-SQL Designer: http://ondras.zarovi.cz/sql/demo/
-Backup a database using Microsoft mysql server management studio: https://www.learnhowtoprogram.com/c/c-database-basics/to-do-list-with-databases-part-2-backing-up-and-restoring-a-database
+#### Resources
++ SQL Designer: http://ondras.zarovi.cz/sql/demo/
++ Backup a database using Microsoft mysql server management studio: https://www.learnhowtoprogram.com/c/c-database-basics/to-do-list-with-databases-part-2-backing-up-and-restoring-a-database
 
-## Using Command Line
+#### Accessing Databases
+###### *In PowerShell*
+```sql 
+//local databases
+sqlcmd -S "(localdb)\mssqllocaldb"
+```
+
+
+#### Using Command Line
+###### *In PowerShell*
 ```console
 //Access the SQLCMD
 sqlcmd -S "(localdb)\mssqllocaldb"
@@ -27,6 +36,7 @@ sqlcmd -S "(localdb)\mssqllocaldb"
 ```
 
 Shortterm Cheat Sheet
+###### *In PowerShell*
 ```console
 1> CREATE DATABASE todo;
 2> GO
