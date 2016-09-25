@@ -9,6 +9,7 @@ GitKraken| John Franti| "The downright luxurious Git client,for Windows, Mac & L
 ## C#
 C# | Recommend | Description| Link
 :---:|:---:|---|:---:
+The Yellow Book |Ric| The C# Yellow Book is used by the Department of Computer Science in the University of Hull as the basis of the First Year programming course. | http://www.robmiles.com/c-yellow-book/
 Mono | Epicodus | Mono is a software platform designed to allow developers to easily create cross platform applications part of the .NET Foundation. | http://www.mono-project.com/download/#download-win
 Mono for PwrShl | Epicodus | Setting up Mono first time | https://www.learnhowtoprogram.com/c/getting-started-with-c/installing-c
 Visual Studio | Epicodus | Full-featured and extensible tool for developers building non-enterprise applications | https://beta.visualstudio.com/downloads/
