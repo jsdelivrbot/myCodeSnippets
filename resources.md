@@ -8,7 +8,7 @@ GitKraken| John Franti| "The downright luxurious Git client,for Windows, Mac & L
 
 ## Csharp
 C# | Recommend | Description| Link
-:---:|:---:|---|:---:
+:---:|:---:|:---:|:---:
 C# 6.0 in a NutShell|Ric and John | BOOK : # 6.0 in a NutShell: the Definitive Reference  |https://play.google.com/books/reader?id=Ns4e0ko-S7QC&printsec=frontcover&output=reader&hl=en&pg=GBS.PT23
 The Yellow Book |Ric| BOOK : The C# Yellow Book is used by the Department of Computer Science in the University of Hull as the basis of the First Year programming course. | http://www.robmiles.com/c-yellow-book/
 Mono | Epicodus | Mono is a software platform designed to allow developers to easily create cross platform applications part of the .NET Foundation. | http://www.mono-project.com/download/#download-win
@@ -20,7 +20,7 @@ Windows apps, using existing skills, teams, and code|https://www.xamarin.com/pla
 
 ## Sql
 Sql | Recommend | Description | Link
-:---:|:---:|---|:---:
+:---:|:---:|:---:|:---:
 Coding Horror | Epicodus | Explains Outer and Inner Joins | https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
 Sqlfiddle | me | Like jsfiddle.  Often broken.  | http://sqlfiddle.com/
 Oracle Live Sql | me | A place to test sql commands | https://livesql.oracle.com/
