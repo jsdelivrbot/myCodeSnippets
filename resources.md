@@ -6,7 +6,7 @@ Git | Recommend | Description | Link
 Chocolatey | Epicodus |"The package manager for Windows Chocolatey - Software Management. Automated." |https://chocolatey.org/
 GitKraken| John Franti| "The downright luxurious Git client,for Windows, Mac & Linux." _This resource is an excellent user-interface for gitHub etc._ |https://www.gitkraken.com/
 
-## C#
+## Csharp
 C# | Recommend | Description| Link
 :---:|:---:|---|:---:
 C# 6.0 in a NutShell|Ric and John | BOOK : # 6.0 in a NutShell: the Definitive Reference  |https://play.google.com/books/reader?id=Ns4e0ko-S7QC&printsec=frontcover&output=reader&hl=en&pg=GBS.PT23
@@ -17,6 +17,13 @@ Visual Studio | Epicodus | Full-featured and extensible tool for developers buil
 SQL Server Managment Studio|Epicodus|SQL Server Management Studio (SSMS) is an integrated environment for accessing, configuring, managing, administering, and developing all components of SQL Server|https://msdn.microsoft.com/en-us/library/mt238290.aspx
 Xamarin | Sid | Deliver native Android, iOS, and
 Windows apps, using existing skills, teams, and code|https://www.xamarin.com/platform
+
+## Sql
+Sql | Recommend | Description | Link
+:---:|:---:|---|:---:
+Coding Horror | Epicodus | Explains Outer and Inner Joins | https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+Sqlfiddle | me | Like jsfiddle.  Often broken.  | http://sqlfiddle.com/
+Oracle Live Sql | me | A place to test sql commands | https://livesql.oracle.com/
 
 ## JavaScript
 JavaScript | Recommend | Description | Link
