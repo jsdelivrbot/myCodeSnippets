@@ -27,6 +27,7 @@ You may need to check for the last version
 ```console
 $ dnvm install latest
 $ dnvm upgrade
+$ apm install language -cshtml //needs node.js
 ```
 Common starting folders
 ```console
