@@ -15,8 +15,7 @@ Mono | Epicodus | Mono is a software platform designed to allow developers to ea
 Mono for PwrShl | Epicodus | Setting up Mono first time | https://www.learnhowtoprogram.com/c/getting-started-with-c/installing-c
 Visual Studio | Epicodus | Full-featured and extensible tool for developers building non-enterprise applications | https://beta.visualstudio.com/downloads/
 SQL Server Managment Studio|Epicodus|SQL Server Management Studio (SSMS) is an integrated environment for accessing, configuring, managing, administering, and developing all components of SQL Server|https://msdn.microsoft.com/en-us/library/mt238290.aspx
-Xamarin | Sid | Deliver native Android, iOS, and
-Windows apps, using existing skills, teams, and code|https://www.xamarin.com/platform
+Xamarin | Sid | Deliver native Android, iOS, and Windows apps, using existing skills, teams, and code|https://www.xamarin.com/platform
 
 ## Sql
 Sql | Recommend | Description | Link
