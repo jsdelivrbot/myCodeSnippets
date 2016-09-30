@@ -35,6 +35,7 @@ CSS| Recommend |Description | Link
 Boostrap|All|"Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."| http://getbootstrap.com/
 Bootwatch| Stephen |Free themes for Bootstrap |https://bootswatch.com/
 W3 Schools Parallax | Use a container element and add a background image to the container with a specific height. Then use the background-attachment: fixed to create the actual parallax effect. | http://www.w3schools.com/howto/howto_css_parallax.asp
+Hero Image | me | A full xcreen hero image effect.|http://www.web2feel.com/creating-a-fullscreen-hero-div-for-your-site-header/
 
 ## jQuery libraries
 Resource | Description | Link
