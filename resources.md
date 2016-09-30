@@ -16,7 +16,7 @@ MarkDown | Jonathan |Markdown Cheatsheet  |[github.com/adam-p](https://github.co
 :---:|:---:|---|---:
 .Net Power Point| Stephen | Seattle Code Camp slides from September 2016  | [onedrive.live.com](https://onedrive.live.com/?authkey=%21ANJynLkWT3h8mes&id=D5C127793547081C%21128521&cid=D5C127793547081C)
 Asp.Net Security| Sid |Implement Security using ASP.NET Core Identity in 10 Easy Steps  BinaryIntellect Knowledge Base| [www.binaryintellect.net](http://www.binaryintellect.net/articles/b957238b-e2dd-4401-bfd7-f0b8d984786d.aspx)
-Markdown Mode | Sid | A language service for editing Markdown files.| https://visualstudiogallery.msdn.microsoft.com/0855e23e-4c4c-4c82-8b39-24ab5c5a7f79
+Markdown Mode | Sid | A language service for editing Markdown files.| [visualstudiogallery.msdn.microsoft.com](https://visualstudiogallery.msdn.microsoft.com/0855e23e-4c4c-4c82-8b39-24ab5c5a7f79)
 
 ## Csharp
 C# | Recommend | Description| Link
