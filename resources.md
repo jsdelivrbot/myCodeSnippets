@@ -9,7 +9,7 @@ GitKraken| John Franti| "The downright luxurious Git client,for Windows, Mac & L
 ## Readme
 Git | Recommend | Description | Link
 :---:|:---:|---|---:
-MarkDown | Jonathan |Markdown Cheatsheet  |[github.com/adam-p]([https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+MarkDown | Jonathan |Markdown Cheatsheet  |[github.com/adam-p](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## .Net Core and ASP.net
 .Net | Recommend | Description | Link
@@ -28,14 +28,14 @@ Mono for PwrShl | Epicodus | Setting up Mono first time | [learnhowtoprogram.com
 Visual Studio | Epicodus | Full-featured and extensible tool for developers building non-enterprise applications | [beta.visualstudio.com](https://beta.visualstudio.com/downloads/)
 SQL Server Managment Studio|Epicodus|SQL Server Management Studio (SSMS) is an integrated environment for accessing, configuring, managing, administering, and developing all components of SQL Server|[msdn.microsoft.com](https://msdn.microsoft.com/en-us/library/mt238290.aspx)
 Xamarin | Sid | Deliver native Android, iOS, and Windows apps, using existing skills, teams, and code|[www.xamarin.com](https://www.xamarin.com/platform)
-Xunit Docs|Sid |Xunit Documentation: Getting started with xUnit.net (.NET Core / ASP.NET Core)|[](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+Xunit Docs|Sid |Xunit Documentation: Getting started with xUnit.net (.NET Core / ASP.NET Core)|[xunit.github.io](https://xunit.github.io/docs/getting-started-dotnet-core.html)
 
 ## Sql
 Sql | Recommend | Description | Link
 :---:|:---:|:---:|---:
 Coding Horror | Epicodus | Explains Outer and Inner Joins | [blog.codinghorror.com](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 Testing SQL Statements | me | Our SQL tutorial will teach you how to use SQL to access and manipulate data in: MySQL, SQL Server, Access, Oracle, Sybase, DB2, and other database systems.  | [www.w3schools.com](http://www.w3schools.com/sql/default.asp)
-Oracle Live Sql | me | A place to test sql commands | [livesql.oracle.com](https://livesql.oracle.com/)
+Oracle Live Sql | me | A place to test sql commands.  Need to sign up with an account and insert database schema | [livesql.oracle.com](https://livesql.oracle.com/)
 
 ## JavaScript
 JavaScript | Recommend | Description | Link
@@ -48,7 +48,7 @@ CSS| Recommend |Description | Link
 Boostrap|All|"Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."| [getbootstrap.com](http://getbootstrap.com/)
 Bootwatch| Stephen |Free themes for Bootstrap |[bootswatch.com](https://bootswatch.com/)
 W3 Schools Parallax | Stephen | Use a container element and add a background image to the container with a specific height. Then use the background-attachment: fixed to create the actual parallax effect. | [www.w3schools.com](http://www.w3schools.com/howto/howto_css_parallax.asp)
-Hero Image | me | A full xcreen hero image effect.|[www.web2feel.com](http://www.web2feel.com/creating-a-fullscreen-hero-div-for-your-site-header/)
+Hero Image | Jonathan | A full xcreen hero image effect.|[www.web2feel.com](http://www.web2feel.com/creating-a-fullscreen-hero-div-for-your-site-header/)
 
 ## jQuery libraries
 Resource | Recommend |Description | Link
@@ -62,7 +62,7 @@ Training| Recommend |Description | Link
 :---:|:---:|---|---:
 Pluralsight | Andrew | Welcome to Pluralsight. The on-demand technology learning platform you count on to stay relevant, with tools that measure your skills and solve your problems—faster.|[www.pluralsight.com](https://www.pluralsight.com/)
 Epicodus | Epicodus | "A vocation school for aspiring programmers." _Good curriculem_ | [learnhowtoprogram.com](https://www.learnhowtoprogram.com)
-Treehouse| All | "Learn Web Design, Coding & Much More."  _One of the few sites worth the subscription fee._ | [teamtreehouse.com](https://teamtreehouse.com/)
+Treehouse| Epicodus | "Learn Web Design, Coding & Much More."  _One of the few sites worth the subscription fee._ | [teamtreehouse.com](https://teamtreehouse.com/)
 
 ## Hosting Sites
 Hosting| Recommend | Description | Link
@@ -96,13 +96,13 @@ API | Hoster |Description | Link
 
 
 ## Programming Articles
-Topic | Site | Title / Description | Link
-:---:|:---:|---|---:
-Jobs|www.codefellows.com | 5 Types of tech companies you want to work for  | [www.codefellows.org](https://www.codefellows.org/blog/5-types-of-tech-companies-you-should-consider-working-for/)
-Motivation|khanacademy.org|The Learning Myth: Why I'll Never Tell My Son He's Smart|[www.khanacademy.org](https://www.khanacademy.org/about/blog/post/95208400815/the-learning-myth-why-ill-never-tell-my-son-hes)
-Diversity|medium.com|The Other Side of Diversity|[medium.com](https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e#.p1j19rfeo)
-Motivation|linkedin.com|8 easy ways to $%^& up your code school experience|[www.linkedin.com](https://www.linkedin.com/pulse/8-easy-ways-up-your-code-school-experience-perry-eising)
-Internships | Ric | The Comprehensive Programmer’s Guide to Internships | [simpleprogrammer.com](https://simpleprogrammer.com/2016/09/05/programmers-guide-to-internship/)
+Topic | Title / Description | Link
+:---:|---|---:
+Jobs| 5 Types of tech companies you want to work for  | [www.codefellows.org](https://www.codefellows.org/blog/5-types-of-tech-companies-you-should-consider-working-for/)
+Motivation|The Learning Myth: Why I'll Never Tell My Son He's Smart|[www.khanacademy.org](https://www.khanacademy.org/about/blog/post/95208400815/the-learning-myth-why-ill-never-tell-my-son-hes)
+Diversity|The Other Side of Diversity|[medium.com](https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e#.p1j19rfeo)
+Motivation|8 easy ways to $%^& up your code school experience|[www.linkedin.com](https://www.linkedin.com/pulse/8-easy-ways-up-your-code-school-experience-perry-eising)
+Internships | The Comprehensive Programmer’s Guide to Internships | [simpleprogrammer.com](https://simpleprogrammer.com/2016/09/05/programmers-guide-to-internship/)
 
 ## Life Articles
 Topic | Site | Title / Description
