@@ -34,8 +34,8 @@ Xunit Docs|Sid |Xunit Documentation: Getting started with xUnit.net (.NET Core /
 Sql | Recommend | Description | Link
 :---:|:---:|:---:|---:
 Coding Horror | Epicodus | Explains Outer and Inner Joins | [blog.codinghorror.com](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
-Testing SQL Statements | me | Our SQL tutorial will teach you how to use SQL to access and manipulate data in: MySQL, SQL Server, Access, Oracle, Sybase, DB2, and other database systems.  | [www.w3schools.com](http://www.w3schools.com/sql/default.asp)
-Oracle Live Sql | me | A place to test sql commands.  Need to sign up with an account and insert database schema | [livesql.oracle.com](https://livesql.oracle.com/)
+Testing SQL Statements | Jonathan | Our SQL tutorial will teach you how to use SQL to access and manipulate data in: MySQL, SQL Server, Access, Oracle, Sybase, DB2, and other database systems. _I added this because I test all the syntax of my sql statments in their practice area before using it on my site_ | [www.w3schools.com](http://www.w3schools.com/sql/default.asp)
+Oracle Live Sql | Jonathan | A place to test sql commands.  Need to sign up with an account and insert database schema | [livesql.oracle.com](https://livesql.oracle.com/)
 
 ## JavaScript
 JavaScript | Recommend | Description | Link
