@@ -55,6 +55,8 @@ Resource | Recommend |Description | Link
 :---:|:---:|---|---:
 Report.js | Jonathan | Report.js depend on Chart.js for graph rendering. You need to add an ES6 polyfill (core-js or babel-pollyfill) to use this library. | [bi-joe.github.io](http://bi-joe.github.io/report.js/line.html)
 Popup Overlay | Jonathan |jQuery plugin for responsive and accessible modal windows and tooltips|[dev.vast.com](http://dev.vast.com/jquery-popup-overlay/)
+jquery Rain |Jonathan | Librayer of jQuery Project | http://www.jqueryrain.com/
+jquery UI | Jonathan | Basic documentation and librayer of jQuery projects | https://jqueryui.com/
 
 
 ## Training Sites
