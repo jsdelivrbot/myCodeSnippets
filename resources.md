@@ -50,6 +50,7 @@ Bootwatch| Stephen |Free themes for Bootstrap |[bootswatch.com](https://bootswat
 W3 Schools Parallax | Stephen | Use a container element and add a background image to the container with a specific height. Then use the background-attachment: fixed to create the actual parallax effect. | [www.w3schools.com](http://www.w3schools.com/howto/howto_css_parallax.asp)
 Hero Image | Jonathan | A full xcreen hero image effect.|[www.web2feel.com](http://www.web2feel.com/creating-a-fullscreen-hero-div-for-your-site-header/)
 List Styling| Jonathan | A nice link bar--no dropdpwn |[codepen.io](http://codepen.io/secondfret/pen/GoqLK)
+Button Styler | Jonathan | Button Styler | [css3buttongenerator.com](http://css3buttongenerator.com/)
 
 ## jQuery libraries
 Resource | Recommend |Description | Link
