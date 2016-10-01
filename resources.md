@@ -1,5 +1,13 @@
 # Resource List
 
+## User Libraries
+Git | Description | Link
+:---:|---|---:
+Codpene |Show off your latest creation and get feedback. Build a test case for that pesky bug. Find example design patterns and inspiration for your projects.| [codepen.io](https://codepen.io/)
+JSfiddle | Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor. | [jsfiddle.net](https://jsfiddle.net/)
+pcpartpicker|  **Hardware**: Explorebuild guides, which cover systems for all use-cases and budgets, or create your own and share it with our community.|[pcpartpicker.com](https://pcpartpicker.com/)
+
+
 ## Git
 Git | Recommend | Description | Link
 :---:|:---:|---|---:
