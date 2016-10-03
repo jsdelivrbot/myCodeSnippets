@@ -124,10 +124,17 @@ Motivation|The Learning Myth: Why I'll Never Tell My Son He's Smart|[www.khanaca
 Advice |How Not to Be a Networking Leech: Tips for Seeking Professional Advice | [www.nytimes.com](http://www.nytimes.com/2015/09/27/jobs/how-not-to-be-a-networking-leech-tips-for-seeking-professional-advice.html?contentCollection=smarter-living&hp&action=click&pgtype=Homepage&clickSource=story-heading&module=second-column-region&region=top-news&WT.nav=top-news&_r=0)
 
 
-## Reminders
-Reminder | Site
----|---
-Do this for gitIgnoreGlobal | [learnhowtoprogram.com](https://www.learnhowtoprogram.com/intro-to-programming/getting-started-with-intro-to-programming/git-configurations)
+## Music
+Mix | Description
+---|---|
+[Enjoy Studying - Soundcloud Study Mixes](https://soundcloud.com/enjoy-studying)|
+[Firewatch](https://www.youtube.com/watch?v=X6neFKE4yaE)| The official soundtrack to Firewatch, composed by the brilliant Chris Remo, who has also did the score for Gone Home & Thirty Flights of Loving.
+[Ori and the Blind Forest Soundtrack](https://www.youtube.com/watch?v=MeVFrt7BUyw)|Ori and the Blind Fores.
+[Mirror's Edge Soundtrack](https://www.youtube.com/watch?v=Y05wiQQbFLU)|
+[The Turing Test](https://www.youtube.com/watch?v=MYo7tABrXrA)  | Spacelike.  Intense but relaxing. Music composed by Sam Houghton & Yakobo. | Mirror's Edge OST.
+Solar Fields & Lisa Miskovsky.
+[Abzû](https://www.youtube.com/watch?v=_BaOqcRUFpw) | bzû Full Soundtrack Abzu Full OST Complete OST Music Songs Theme PS4 Austin Wintory.
+
 
 
 - **Krist Dahl** is a principal at atomic infotech.
