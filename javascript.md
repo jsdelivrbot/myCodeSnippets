@@ -17,9 +17,10 @@ Initialize a new npm in the top level of the project. This creates a manifest fi
 
 ###### console
 ```console
-$ npm init
-$ npm install gulp --save-dev 
-$ npm install browserify --save-dev
+npm init
+npm install gulp --save-dev 
+npm install browserify --save-dev
+npm install vinyl-source-stream --save-dev // This is 
 ```
 ###### .gitignore
 ```file
@@ -29,4 +30,6 @@ node_modules/
 ###### gulpfile.js
 ```js
 var gulp = require('gulp');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 ```
