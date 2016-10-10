@@ -26,7 +26,7 @@ $ npm install browserify --save-dev
 node_modules/
 ```
 
-###### .gulp
+###### gulpfile.js
 ```js
 var gulp = require('gulp');
 ```
