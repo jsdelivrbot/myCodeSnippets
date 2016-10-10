@@ -16,7 +16,7 @@ Initialize a new npm in the top level of the project. This creates a manifest fi
 ```console
 $ npm init
 ```
-Add packages. Gulp will manage the other packages. When command is run it creates _node_modules_ and install the gulp package in it.  Rhe --save-dev flag will save the gulp package to the "shopping list" in our manifest file, which is called package.json.  Rhe browserify package is responsible for adding keywords to translate the code into new JavaScript code that our browser does understand.  All packages should be included in the package.json file.
+Add packages. Gulp will manage the other packages. When command is run it creates _node_modules_ and install the gulp package in it.  The **--save-dev** flag will save the gulp package to the "shopping list" in our manifest file, which is called package.json.  Rhe browserify package is responsible for adding keywords to translate the code into new JavaScript code that our browser does understand.  All packages should be included in the package.json file. The first time running gulp on a new machine install it on the system globally using **$ npm install gulp -g** (_$ sudo npm install gulp -g if permission errors_). **$ npm install** will reload the package for us.
 
 ###### Console
 ```console
@@ -26,4 +26,4 @@ $ npm install browserify --save-dev
 ###### .gitignore
 ```file
 node_modules/
-''
+```
